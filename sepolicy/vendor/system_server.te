@@ -1,0 +1,5 @@
+get_prop(system_server, persist_camera_prop)
+get_prop(system_server, camera_prop)
+
+allow system_server camera_prop:file { read open getattr map };
+allow system_server vendor_default_prop:file { read open getattr map };
